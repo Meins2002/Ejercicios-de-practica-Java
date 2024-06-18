@@ -74,4 +74,24 @@ public class Estructuras_condicionales {
    System.out.println("Los números son iguales ");
   }
  }
+
+ public void Año_Biciesto (){
+  int año;
+  Scanner scanner = new Scanner(System.in);
+  System.out.println("Ejercicio 4 Año biciesto");
+  System.out.println(" Ingrese un Año:");
+  año = scanner.nextInt();
+
+  System.out.println("Se utiliza operadores relacionales = < , > , ==, !=, <=, >=" + '\n' + "para la condición" + '\n' + "tambien se sus operadores logicos : && y ||");
+
+  if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)){
+   System.out.println("El año " + año + " es Bisiesto.");
+  }else {
+   System.out.println("El año " + año + " no es Bisiesto.");
+  }
+  /*Para que la expresión completa sea verdadera, al menos una de las dos partes debe ser verdadera. Es decir,
+  el año debe ser divisible por 4 y no ser divisible por 100 (primera parte) o ser divisible por 400 (segunda parte)
+  para ser considerado un año bisiesto.*/
+ }
+
 }
